@@ -1,0 +1,16 @@
+# Logs
+logs
+*.log
+
+# Modules
+node_modules
+build
+visualize-bundle.html
+*.local
+/types
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.cert
+.DS_Store

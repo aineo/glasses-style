@@ -1,0 +1,101 @@
+:root {
+  --bg-color: #1f1f1f;
+  --title-color: #bbb;
+  --dark-dot: #777;
+  --light-dot: #eee;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+div#container {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+canvas#out_canvas {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  z-index: 8;
+  transform: scaleX(-1);
+}
+
+canvas#ar_canvas {
+  position: absolute;
+  visibility: hidden;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  z-index: 12;
+  transform: scaleX(-1);
+}
+
+canvas#bg_canvas {
+  position: absolute;
+  visibility: hidden;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  z-index: 10;
+  transform: scaleX(-1);
+}
+
+div#loading {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#loading-title {
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-weight: normal;
+  color: var(--title-color);
+}
+
+#loading-dots {
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: dots 1s infinite linear alternate;
+}
+
+@keyframes dots {
+  0% {
+    box-shadow:
+      20px 0 var(--dark-dot),
+      -20px 0 var(--light-dot);
+    background: var(--dark-dot);
+  }
+  33% {
+    box-shadow:
+      20px 0 var(--dark-dot),
+      -20px 0 var(--light-dot);
+    background: var(--light-dot);
+  }
+  66% {
+    box-shadow:
+      20px 0 var(--light-dot),
+      -20px 0 var(--dark-dot);
+    background: var(--light-dot);
+  }
+  100% {
+    box-shadow:
+      20px 0 var(--light-dot),
+      -20px 0 var(--dark-dot);
+    background: var(--dark-dot);
+  }
+}
