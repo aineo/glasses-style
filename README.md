@@ -28,6 +28,7 @@ Build
 
 ## Run
 1. Run on desktop
+
 ```sh
   npm run start
 ```
@@ -36,16 +37,16 @@ And go to  [`http://localhost:2025/glasses-style`](http://localhost:2025/glasses
 
 2. Run on mobile (with https)
 
-For run with https for available camera on mobile devices create directory with name `.cert` and copy your generated certificate `cert.pem` and key `key.pem` to there .
+For run with https for camera on mobile devices create directory with name `.cert` and copy your generated certificate `cert.pem` and key `key.pem` to there.
 
 ```sh
   npm run start:https
 ```
 
-To launch the widget on mobile devices, follow the `Network` link under `Local` from terminal
+To launch the widget on mobile devices, follow the `Network` link under `Local` in terminal
 
 ```
-https://<ip_Desktop>:2025
+https://<ip_Desktop>:2025/glasses-style
 ```
 
 ## Lint & prettify project
