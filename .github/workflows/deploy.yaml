@@ -1,4 +1,4 @@
-name: Glasses style deploy static to Pages
+name: Glasses style project - deploy static to Pages
 
 on:
   push:

@@ -1,5 +1,8 @@
 # glasses-style
-Glasses try on project with stylization
+Glasses try on project with stylization.
+
+`glasses-style` contains few dependencies and is written using mediapipe and three.js.
+
 
 ## Setup project
 
